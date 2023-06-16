@@ -1,0 +1,157 @@
+body {
+    background-image: url("../img/backgroud.jpg");
+    /* background-size: 100%; */
+    margin: 0;
+    font-family: Hevetica;
+}
+
+input {
+    padding: 12px ;
+    border-radius: 10px;
+    font-size: 1.1rem;
+
+}
+
+button{
+    background-color: #102F5e;
+    color: #FDFDFD;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    transition: 0.5s;
+    border-radius: 10px;
+    width: 45px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FDFDFD;
+    color: #102F5e;
+}
+
+/* Todo header */
+main {
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background-color: #FDFDFD;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+main header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: #ccc;
+    color: #333;
+}
+
+/* Todo */
+#todo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+
+#todo input {
+    width: 350px;
+    margin-right: 0.3rem;
+
+}
+
+/* Todo List */
+#listaTarefas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#listaTarefas Li {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:solid 2px;
+    border-color: #102F5e;
+    border-radius: 15px;
+    margin-top: 20px
+}
+
+.btnAcao {
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+}
+
+.textoTarefa {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+
+}
+
+#janelaEdicao{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #FDFDFD;
+    border: 1px solid #102F5e;
+    width: 415px;
+    border-radius: 12px;
+    z-index: 200;
+    display: none; 
+}
+
+#janelaEdicao.abrir {
+    display: block !important;
+}
+
+#janelaEdicaoFundo {
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 100;
+    right: 0;
+    display: none;   
+}
+
+#janelaEdicaoFundo.abrir {
+    display: block !important;
+}
+
+#janelaEdicaoBtnFechar {
+    position: absolute;
+    top: -25px;
+    right: -18px; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.frm-linha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.frm-linha label {
+    margin-bottom: 7px;
+}
+
+#btnAtualizarTarefa {
+    height: 50px;
+    width: 415px;
+    font-size: 1.4rem;
+}
