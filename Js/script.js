@@ -25,14 +25,6 @@ btnAddTarefa.addEventListener('click', (e) => {
     }
 });
 
-function validacaoVazio(input) { //Verificando se o campo está vazio.
-    if (input.value == "") {
-        alert('Oops, insira uma tarefa para continuar :)')
-        return false
-    } else {
-        return true
-    }
-}
 
 janelaEdicaoBtnFechar.addEventListener('click', (e) => {   // Add envento do botão de fechar janela de edição 
     alternarJanelaEdicao();
@@ -63,6 +55,15 @@ btnAtualizarTarefa.addEventListener('click', (e) => {
 
 
 //Funções
+function validacaoVazio(input) { //Verificando se o campo está vazio.
+    if (input.value == "") {
+        alert('Oops, insira uma tarefa para continuar :)')
+        return false
+    } else {
+        return true
+    }
+}
+
 function gerarId() {
     return Math.floor(Math.random() * qtdIdsDisponiveis); //  Math.floor retorna um numero entre 0 e 3000 e Math.random arredonda.
 }
